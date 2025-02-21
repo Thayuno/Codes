@@ -1,0 +1,6 @@
+1: C - 0;
+2: C - main()
+3: A - {}
+4: B - ;
+5: C - /* Comment */
+6: C - iostream

@@ -1,0 +1,7 @@
+1: C - Double
+2: D - ==
+3: C - You include <iostream> header file
+4: B - Real
+5: C - getline
+6: A - 0
+7: C - To make it easy to read in, and print out, actual characters rather than numbers, even though chars are stored as numbers.

@@ -1,0 +1,4 @@
+1: B - double function (char x)
+2: B - int
+3: C - function ()
+4: B - int funct (int x) {return x = x+1;}

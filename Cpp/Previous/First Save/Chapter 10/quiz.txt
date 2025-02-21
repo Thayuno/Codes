@@ -1,0 +1,5 @@
+1: A - int anarray[10];
+2: B - 28
+3: B - int anarray[20][20]
+4: C - foo [7]
+5: B - int func ( int x[10][]);

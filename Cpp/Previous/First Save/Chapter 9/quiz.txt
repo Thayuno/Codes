@@ -1,0 +1,5 @@
+1: C - rand will return the same sequence of numbers every time your program runs
+2: B - To generate new random numbers eeach time your program is runs
+3: D - 0 to RAND_MAX
+4: D - 2
+5: C - Once, at the start of your program

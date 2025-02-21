@@ -1,0 +1,4 @@
+1: A - 10
+2: A - When x is less than 100
+3: D - repeat until
+4: C - 1
