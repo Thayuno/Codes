@@ -1,0 +1,563 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{cancel,amsmath,amssymb,amsfonts,setspace}
+
+\begin{document}
+\pagenumbering{gobble}
+  \begin{center}
+    \textbf{Primeira lista de Exercícios.}\\
+    06 de Março, 2025.
+  \end{center}
+  \vspace*{.5cm}
+
+  \textbf{1.} Quanto de juros um capital de R\$ $1.000,00 $ aplicado à taxa de
+  juros simples de $10\%$ ao ano, rende ao longo de $2$ anos?
+  \[
+    J = C * i * n = 1.000 * 0,1 * 2 = \text{R\$}\ 200,00 
+  \]
+
+  \textbf{2.} Em quanto tempo um capital de R\$ $10.000.000,00$ aplicado a $4,3\%$ a.m. (juros
+  simples) renderá R\$ $645.000,00$?
+  \[
+    J = C * i * n \implies 645.000 = 10.000.000 * 0,043 * n 
+  \]
+  Isolando n:
+  \[
+    n = \frac{645.000}{10.000.000 * 0,043} = 1,5\ \text{mês ou}\ 45\ \text{dias}
+  \]
+  
+  \textbf{3.} Bruno aplicou R\$ 30.000,00 a juros simples, pelo prazo de 6 meses, e recebeu R\$
+  9.000,00 de juros. Qual a taxa mensal da aplicação?
+  \[
+    J = C*i*n \implies 9.000 = 30.000*i*6
+  \]
+  Isolando i:
+  \[
+    i = \frac{9.000}{30.000*6} = 0,05\ \text{a.m.}
+  \]
+  
+  \textbf{4.} Que quantia aplicada a 4\% a.m. (juros simples), durante três meses e dez dias,
+  rende R\$ 28.000,00?
+
+  Converter o tempo apenas para meses:\\
+  Se manter em fração terá o resultado exato, se converter dará uma apro-ximação:
+  \[
+    3\ \text{meses}  + 10\ \text{dias} \implies 3 + \frac{10}{30}\ = 3 + \frac{1}{3} = \frac{9 + 1}{3} = \frac{10}{3}
+  \]
+  \[
+    J = C*i*n \implies 28.000 = C*0,04*\frac{10}{3}
+  \]
+  Isolando C:
+  \[
+    C = \frac{28.000}{0,04*\frac{10}{3}} = \frac{28.000 * 3}{0,4} = \text{R\$}\ 210.000
+  \]
+
+  \newpage
+  \textbf{5.} Qual é a taxa de juros (simples) anual cobrada em cada um dos casos abaixo, se
+  uma pessoa aplicou o capital de R\$ 1.000,00 e recebeu:
+  \vspace*{.5cm}
+
+  \hspace*{.5cm} a)M = R\$ 1.420,00; n = 2 anos.
+  \[
+    M = C(1 + in) \implies 1.420 = 1.000(1 + i*2)
+  \]
+  Isolando o i:
+  \[
+    1 + 2i = \frac{1.420}{1.000} = 1,42 \implies 2i = 1,42 - 1 = 0,42 \implies i = \frac{0,42}{2}
+  \]
+  Temos que i:
+  \[
+   0,21\ \text{a.a.}
+  \]
+
+  \hspace*{.5cm} b) M = R\$ 1.150,00;n = 10 meses.
+
+  Converta meses para anos:
+  \[
+    \frac{10}{12} = \frac{5}{6}
+  \]
+  \[  
+    M = C(1 + in) \implies 1.150 = 1.000\left( 1 + \frac{5}{6}i\right)
+  \]
+  Isolando i:
+  \[
+    1 + \frac{5}{6}i = \frac{1.150}{1.000} = 1,15 \implies \frac{5}{6}i =1,15 - 1 = 0,15 \implies i = \frac{6*0,15}{5}
+  \]
+  Temos como resultado:
+  \[
+    i = 0,18\ \text{a.a.}
+  \]
+
+  \hspace*{.5cm} c) M = R\$ 1.350,00; n = 1 ano e 9 meses.
+  Convertendo 1 ano e 9 meses apenas para anos:
+  \[
+    1 + \frac{9}{12} = 1 + \frac{3}{4} = \frac{7}{4}\ \text{anos}
+  \]
+  \[
+    M = C( 1 + in ) \implies 1.350 = 1.000\left( 1 + \frac{7}{4}i\right)
+  \]
+  Isolando i:
+  \[
+    1 + \frac{7}{4} = \frac{1.350}{1.000} = 1,35 \implies \frac{7}{4} = 1,35-1 = 0,35
+  \]
+  \[
+    i = \frac{0,35*4}{7} = 0,2\ \text{a.a.}
+  \]
+  \newpage
+  \textbf{6.} Uma geladeira é vendida à vista por R\$ 1.500,00 ou então à prazo com R\$ 450,00
+  de entrada mais uma parcela de R\$ 1.200,00 após 4 meses. Qual a taxa mensal de juros
+  simples do financiamento?
+  \vspace*{.5cm}
+
+  O juros só interfere no valor excedente ao que foi pago da entrada:
+  \[
+    C = 1.500 - 450 = 1.050
+  \]
+  \[
+    M = C(1 + in) \implies 1.200 = 1.050 ( 1 + 4i)
+  \]
+  Isolando i:
+  \[
+    1 + 4i = \frac{1.200}{1.050} \approx 1,143 \implies 4i = 1,143 - 1 = 0,143
+  \]
+  Tendo assim:
+  \[
+    i = \frac{0,143}{4} = 0,0357\ \text{a.m.}
+  \]
+
+  \textbf{7.} Um comerciante aceita cheque pré-datado para 30 dias, mas cobra juros compostos
+  de 8\% a.m. sobre o preço à vista. Quanto custa à vista uma mercadoria que ao ser paga
+  em 30 dias sai por R\$ 27,00?
+  \[
+    M = C ( 1 + i)^n \implies 27 = C ( 1 + 0,08 )
+  \]
+  Isolando C:
+  \[
+    C = \frac{27}{1,08} = \text{R\$}\ 25
+  \]
+
+  \textbf{8.} Um capital ficou depositado durante 10 meses à taxa de 8\% a.m. no regime de
+  juros simples. Findo esse prazo, o montante auferido foi aplicado durante 15 meses a juros
+  simples à taxa de 10\% a.m. Calcule o valor do capital inicial aplicado, sabendo-se que o
+  montante final recebido foi de R\$ 1.125.000,00.
+
+  \[
+    \begin{array}{lr}
+      10\ \text{meses} & 8\% \\
+      15\ \text{meses} & 10\% 
+    \end{array}
+  \]
+
+  Temos o montante final e queremos saber do valor inicial. Para tal vamos resolver em etapas,
+  do último para o primeiro:
+  \[
+    M = C ( 1 + in ) \implies 1.125.000 = C ( 1 + 15*0,10) \implies 1.125.000 = C ( 1 + 1,5 )
+  \]
+  Isolando C:
+  \[ 
+    C = \frac{1.125.000}{2,5} = 450.000
+  \]
+
+  Com esse montante, podemos calcular o inicial:
+  \[
+    M = C ( 1 + in ) \implies 450.000 = C ( 1 + 0,08*10) \implies 450.000 = C ( 1 + 0,8 )
+  \]
+  Isolando C:
+  \[
+    C = \frac{450.000}{1,8} = 250.000
+  \]
+
+  O valor inicial é: R\$ 250.000  
+
+  \textbf{9.} Se o valor atual de um título é igual a 4/5 de seu valor nominal e o prazo de
+  aplicação for de 15 meses, qual a taxa de juros simples considerada?
+  \[
+    N = A ( 1 + in ) \implies 1 = \frac{4}{5} (1 + i*15)
+  \]
+  Isolando i:
+  \[
+    1 + 15i = {5*1}{4} \implies 15i = 1,25 - 1 \implies i = \frac{0,25}{15} = 0,01\bar{6}
+  \]
+
+  \textbf{10.} Qual o valor futuro de um capital de R\$ 2.000,00, se n = 24 meses e taxa de juros i = 2\% a.m., para:
+  \hspace*{.5cm} Capitalização simples?
+  \[
+    N = A ( 1 + in ) = 2.000 (1 + 0,02*24) = 2.000 (1 + 0,48) = 2.000(1,48)
+  \]
+  \[
+    N = \text{R\$}\ 2.960,00
+  \]
+  \hspace*{.5cm} Capitalização composta?
+  \[
+    N = A ( 1  + i)^n = 2.000 ( 1 + 0,02)^{24} = 2.000 (1,02)^{24} = 2.000(1,60843725)
+  \]
+  \[
+    N = 3.216,8745 = \text{R\$}\ 3.216,87
+  \]
+  
+  \textbf{11.} Qual o valor atual de um montante de R\$ 5.000,00, se n = 36 meses e taxa de
+  juros i = 1\% a.m., para:
+  \hspace*{.5cm} Capitalização simples?
+  \[
+    N = A ( 1 + in ) \implies 5.000  = A (1 + 0,01*36) = A (1,36)
+  \]
+  Isolando A:
+  \[
+    A = \frac{5.000}{1,36} \approx \text{R\$}\ 3.676,47
+  \]
+  \hspace*{.5cm} Capitalização composta?
+  \[
+    N = A ( 1  + i)^n \implies 5.000 = A ( 1 + 0,01)^{36} = A (1,01)^{36} = A(1,43076878)
+  \]
+  Isolando A:
+  \[
+    A = \frac{5.000}{1,43076878} \approx \text{R\$}\ 3.494,62
+  \]
+  \newpage
+
+  \textbf{12.} Determine a taxa de desconto simples comercial de um título negociado 60 dias
+  antes do seu vencimento, sendo seu valor de resgate igual a R\$ 26.000,00 e valor atual na
+  data do desconto de R\$ 24.436,10.
+  \[
+    A_c = N_c - D_c \implies 24.436,10 = 26.000 ( 1 - 60i )
+  \]
+  Isolando i:
+  \[
+    1 - 60i = \frac{24.436,10}{26.000} = 0,93985
+  \]
+  \[
+    60i = 1 - 0,93985 = 0,06015
+  \]
+  \[
+    i = \frac{0,06015}{60} = 0,010025\ \text{a.d.}
+  \]
+  Ela colocou ao mês no slide, chegamos assim: \\
+  $60$ dias = $2$ meses
+  \[
+   2i = 0,06015 \implies i = \frac{0,06015}{2} = 0,030075\ \text{a.m.}
+  \]
+
+  \textbf{13.} Uma pessoa possui 3 títulos aplicados no mercado financeiro, sendo seus valores
+  de resgate: R\$ 110.000,00, R\$ 150.000,00 e R\$ 200.000,00. As datas de resgate são daqui
+  a 28 dias, 47 dias e 72 dias, respectivamente. Qual o valor presente total desses títulos,
+  considerando-se uma taxa de juros simples de 30\% a.a. e o regime de desconto racional?
+  \vspace*{.5cm}
+
+  Primeiramente, vamos fazer uma tabela do que precisamos, o que temos e converter o que for necessário.
+  \vspace*{.5cm}
+
+  \( \left\{
+  \begin{array}{ccllr}
+    V_p & = & A_1 + A_2 + A_3 \\
+    \vspace*{.5cm}
+    T_1 & = & \text{R\$}\ 110.000 & 28\ \text{dias} = \dfrac{28}{360}\ \text{ano} \\
+    \vspace*{.5cm}
+    T_2 & = & \text{R\$}\ 150.000 & 47\ \text{dias} = \dfrac{47}{360}\ \text{ano} \\
+    T_3 & = & \text{R\$}\ 200.000 & 72\ \text{dias} = \dfrac{72}{360}\ \text{ano} \\    i   & = & 0,30\ \text{a.a.}
+  \end{array} \right.
+  \)
+
+  \[
+    A_1 = 110.000 \left( 1 - 0,3 * \frac{28}{360} \right) = 110.000 ( 0,97\bar{6}) = 107.433,33
+  \]
+
+  \[
+    A_2 = 150.000 \left( 1 - 0,3 * \frac{47}{360} \right) = 150.000 ( 0,9608\bar{3}) = 144.125
+  \]
+
+  \[
+    A_3 = 200.000 \left( 1 - 0,3 * \frac{72}{360} \right) = 200.000 (0,94) = 188.000
+  \]
+  \[
+    A_3 = 188.000
+  \]
+
+  Logo temos o valor inicial aplicado:
+
+  \[ V_p = 107.433,33 + 144.125 + 188.000 = 439.558,33 \]
+
+  Refiz e não deu igual o dela.
+  \vspace*{.5cm}
+
+  \textbf{14.} Uma empresa retira do Banco X um empréstimo por 3 meses no valor de R\$
+  500.000,00. Se a taxa de juros simples for de 26\% a.a. e, além disso, o banco cobrar 1\%
+  a título de taxa de serviço, qual será o desconto comercial?
+  
+  \[
+    D_c = N * i * n = 500.000*0,26*\frac{3}{12} = 32.500
+  \]
+  \[
+    D_c + TS = 32.500 + 500.000 * 0,01 = 32.500 + 5.000 = \text{R\$}\ 37.500
+  \]
+
+  \textbf{15.} Numa operação de desconto de um título a vencer em 5 meses, o desconto comercial é 
+  R\$ 140,00 maior que o desconto racional. Qual será o valor nominal do título, se a
+  taxa de juros simples empregada nos descontos for de 24\% a.a.?
+  \vspace*{.5cm}
+
+  \(
+    \left\{ 
+      \begin{array}{clll}
+        \vspace*{.5cm}
+        D_r = \dfrac{N*i*n}{1+i*n} \\
+        D_c = N*i*n
+      \end{array}
+    \right.
+  \)
+
+  \[
+  D_c = D_r + 140
+  \]
+
+  Substituindo os valores que temos:
+
+  \[
+    N*0,24*\frac{5}{12} = \frac{N*0,24*\frac{5}{12}}{1+0,24*\frac{5}{12}} + 140
+  \]
+
+  \[
+    0,1N = \frac{0,1N}{1 + 0,1} + 140 \implies 0,1N - \frac{0,1N}{1,1} = 140
+  \]
+  \[
+    N\left( 0,1 - \frac{0,1}{1,1} \right) = 140 \implies 0,0\overline{09}N = 140 
+  \]
+  \[
+    N = \frac{140}{0,0\overline{09}} = \text{R\$}\ 15.400
+  \]
+
+  Também não bateu com o do slide, para bater, $D_c$ deveria ser 1.400 maior que o $D_r$.
+
+  \textbf{16.} Uma duplicata com valor de resgate igual a R\$ 1.000.000,00 é resgatada 3 meses
+  antes de seu vencimento. Sabendo-se que a taxa de desconto simples comercial é de 3,5\%
+  a.m. e que o IOF retido é de 0,123\% a.m., determine:
+
+  \hspace*{.5cm} a) O valor do desconto comercial e o respectivo IOF retidos.
+  \[
+    D_c = Nin = 1.000.000*0,035*3 = 105.000
+  \]
+  \[
+    IOF = A_c*i*n = (N - D_c)*i*n
+  \]
+  \[
+    IOF = (1.000.000 - 105.000)*0,00123*3 = 3.302,55
+  \]
+        
+  \hspace*{.5cm} b) O valor atual comercial e o valor líquido liberado.
+  \[
+    A_c = 1.000.000 - 105.000 = 895.000
+  \]
+  \[
+    VL = A_c - IOF = 895.000 - 3.302,55 = 891.697,45
+  \]
+  
+  \textbf{17.} Qual é a taxa de juros mensal recebida por um investidor que aplica R\$ 1.000,00
+  e resgata os montantes, segundo as hipóteses abaixo (juros compostos):
+
+  \hspace*{.5cm} a) R\$ 1.076,89 – 3 meses.
+  \[
+    M = C (1 + i)^n \implies 1.076,89 = 1.000(1 + i)^3
+  \]
+  Isolando i:
+  \[
+    (1 + i)^3 = \frac{1.076,89}{1.000} = 1,07689
+  \]
+  \[
+    1+i = \sqrt[3]{1,07689} = 1.0249998
+  \]
+  \[
+    i = 1.0249998 - 1 = 0,0249998
+  \]
+
+  \hspace*{.5cm} b) R\$ 1.125,51 - 4 meses.
+  \[
+    1.125,51 = 1.000 (1+i)^4
+  \]
+  \[
+    (1+i)^4 = \frac{1.125,51}{1.000} = 1,12551
+  \]
+  \[
+    1+i = \sqrt[4]{1,12551} \approx 1,03
+  \]
+  \[
+    i = 1,03 - 1 = 0,03
+  \]
+
+  \hspace*{.5cm} c) R\$ 1.340,10 – 6 meses.
+  \[
+    1.340,10 = 1.000 ( 1 + i)^6
+  \]
+  \[
+    (1 + i)^6 = \frac{1.340,10}{1.000} = 1,34010
+  \]
+  \[
+    1 + i = \sqrt[6]{1,34010} \approx 1,05
+  \]
+  \[
+    i = 1,05 - 1 = 0,05
+  \]
+
+  \textbf{18.} A diferença entre os descontos simples comercial e racional de um título de crédito
+  pagável daqui a 4 meses, à taxa de 6\% a.m., é igual a R\$ 2.100,00. Encontre:
+
+  a) O valor nominal.
+  \[
+    D_r = \frac{N*i*n}{1+i*n} \qquad D_c = N*i*n
+  \]
+  \[
+    D_r - D_c = 2.100
+  \]
+
+  \[
+     \frac{N*i*n}{1+i*n} -  N*i*n = 2.100 \implies \frac{N*0,06*4}{1+0,06*4} -  N*0,06*4 = 2.100
+  \]
+  \[
+    \frac{N*0,24}{1+0,24} -  N*0,24 = 2.100 \implies N \left( \frac{0,24}{1,24} - 0,24 \right) = 2.100
+  \]
+  \[
+    N = \frac{2.100}{0,046451613} \approx 45.208,33
+  \]
+
+  b) O desconto comercial.
+  \[
+    D_c = 45.208,33*0,24 = 10.850
+  \]
+
+  c) O desconto racional.
+  \[
+    D_r = \frac{45.208,33*0,24}{1,24} = 8.750
+  \]
+
+  \textbf{19.} Para cada taxa nominal apresentada a seguir, calcule a taxa 
+  efetiva anual (capitalização composta):
+
+  a) 9\% a.a. capitalizados mensalmente.
+  \[
+    i = \left( 1 + \frac{0,09}{12} \right)^12 - 1 \approx 0,0938
+  \]
+
+  b) 14\% a.a. capitalizados trimestralmente.
+  \[
+    i = \left( 1 + \frac{0,14}{4} \right)^4 - 1 \approx 0,1475
+  \]
+  
+  c) 15\% a.a. capitalizados semestralmente.
+  \[
+    i = \left( 1 + \frac{0,15}{2} \right)^2 - 1 \approx 0,1556
+  \]
+  
+  d) 12\% a.a. capitalizados anualmente
+  \[
+    i = \left( 1 + \frac{0,12}{1} \right)^1 - 1 = 0,12
+  \]
+
+  \textbf{20.} Um título de valor nominal de R\$ 35.000,00 é negociado mediante uma operação
+  de desconto composto comercial (“por fora”) 3 meses antes do seu vencimento. A taxa
+  de desconto adotada é de 5\% a.m. Determine:
+
+  a) O valor atual comercial.
+  \[
+    A_c = N(1-i)^n = 35.000(1-0,05)^3 = 30.008,12
+  \]
+
+  b) O desconto comercial.
+  \[
+    D_c = N - A_c = 35.000 - 30.008,12 = 4.991,875
+  \]
+
+  \textbf{21.} Sabe-se que a taxa nominal de uma aplicação financeira é de 12\% a.a., com
+capitalização mensal composta. Determine:
+
+  a) Quanto valerá uma aplicação de R\$ 10.000,00 depois de 5 meses.
+  \[
+    M = C ( 1 + i)^n = 10.000 ( 1 + 0,1 )^5 = 10.510,10
+  \]
+
+
+  b) A taxa efetiva anual da aplicação financeira.
+  \[
+    i = \left( 1 + \frac{j}{m} \right)^m = \left( 1 + \frac{0,12}{12} \right)^12 - 1 \approx 0,1268  
+  \]
+
+  c) A taxa efetiva mensal da aplicação financeira.
+  \[
+    i = \frac{j}{m} = \frac{0,12}{12} = 0,01
+  \]
+
+  \textbf{22.} Um empresário possui dois títulos com valores de resgate de R\$ 50.000,00 e R\$
+70.000,00, vencíveis em 3 e 7 meses, respectivamente, a partir da data presente. Sem
+liquidez para quitar os débitos em suas datas, negocia com a instituição bancária – que
+estipula juros compostos de 3\% a.m. – para substituição das dívidas por duas outras de
+igual valor a vencerem em 9 e 12 meses. Determine o valor de cada débito nesta nova
+situação.
+\[
+  N = A ( 1 + i )^n \implies A = \frac{N}{(1+i)^n}
+\]
+
+\[
+  A_1 = \frac{50.000}{(1+0,03)^3} \approx 45.758,88
+\]
+\[
+  A_2 = \frac{70.000}{(1+0,03)^7} \approx 56.917,08
+\]
+\[
+  A_t = 45.758,88 + 56.917,88 = 102.675,96
+\]
+
+Com isso, temos que fazer a seguinte equação:
+
+\[
+  X \left( \frac{1}{1,03^9} + \frac{1}{1,03^{12}} \right) = 102.675,96
+\]
+\[
+  X = \frac{102.675,96}{1,46779661} = 69.952,444
+\]
+
+Sabendo
+
+\textbf{23.} Aplique o ”Método Hamburguês” para calcular o valor dos juros simples
+e encargos incidentes sobre os saldos devedores de uma empresa portadora de 
+”Cheque Especial”durante o mês de novembro, quando são cobrados juros de 4,2\% a.m. e IOF de
+0,123\% a.m., conforme extrato a seguir (data da cobrança: 26/11):
+\vspace*{.5cm}
+
+Calcule os dias entre cada movimento:
+ 
+\begin{center}
+  3 dias; 7 dias; 1 dia; 10 dias; 3 dias.
+\end{center}
+
+Multiplique pelo saldo respectivo:
+\begin{center}
+  200.000*3 = 600.000; \\ 30.00*7 = 210.000; \\
+  80.000 * 1 = 80.000; \\ 100.000*10 = 1.000.000 \\
+  100.00 * 3 = 300.000
+\end{center}
+
+Calcule os juros e IOF dos depósitos:
+
+\[
+  J = \frac{0,042}{30} (210.000+80.000+300.000) \approx 826
+\]
+\[
+  IOF = \frac{0,00123}{30} ( 210.000 + 80.000 + 300.000 ) \approx 24,19
+\]
+
+
+\textbf{24.} E preferível receber R\$ 8.000,00 hoje ou R\$ 10.000,00 daqui a 6 meses? Considere
+juros compostos com taxa de 4\% ao mês.
+
+Para comparar, precisamos calcular qual valor teremos:
+
+\[
+  N = A ( 1 + i )^n = 8.000 (1,04)^6 \approx 10.122,55
+\]
+
+Pelo valor ser maior, compensa receber 8.000 hoje
+\vspace*{.5cm}
+
+\textbf{25.} Um imóvel está à venda por 4 parcelas semestrais de R\$ 50.000,00, vencendo a
+primeira em 6 meses. Um financista propõe a compra deste imóvel, pagando-o em duas
+parcelas iguais, uma no ato da compra e outra após 1 ano. Qual é o valor das parcelas,
+se a taxa de juros for de 20\% a.s. (juros compostos)?
+
+\end{document}

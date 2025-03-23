@@ -1,0 +1,779 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1.5cm}
+
+\title{Resolução da Segunda Lista de EDO}
+\author{Yuri Santos Silva}
+\date{11, Março de 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problema 1: Soluções Gerais}
+
+\subsection*{Item a: \(4 \frac{d^2 y}{dx^2} + \frac{dy}{dx} = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+4r^2 + r = 0 \implies r(4r + 1) = 0 \implies r_1 = 0, \, r_2 = -\frac{1}{4}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 + C_2 e^{-\frac{x}{4}}}
+\]
+
+\subsection*{Item b: \(2 \frac{d^2 y}{dx^2} - 5 \frac{dy}{dx} = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+2r^2 - 5r = 0 \implies r(2r - 5) = 0 \implies r_1 = 0, \, r_2 = \frac{5}{2}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 + C_2 e^{\frac{5x}{2}}}
+\]
+
+\subsection*{Item c: \(3 \frac{d^2 y}{dx^2} - 36y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+3r^2 - 36 = 0 \implies r^2 = 12 \implies r = \pm 2\sqrt{3}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{2\sqrt{3}\,x} + C_2 e^{-2\sqrt{3}\,x}}
+\]
+
+\subsection*{Item d: \(\frac{d^2 y}{dx^2} - 8 \frac{dy}{dx} = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 - 8r = 0 \implies r(r - 8) = 0 \implies r_1 = 0, \, r_2 = 8
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 + C_2 e^{8x}}
+\]
+
+\subsection*{Item e: \(\frac{d^2 y}{dx^2} + 9 \frac{dy}{dx} = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 + 9r = 0 \implies r(r + 9) = 0 \implies r_1 = 0, \, r_2 = -9
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 + C_2 e^{-9x}}
+\]
+
+\subsection*{Item f: \(3 \frac{d^2 y}{dx^2} + y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+3r^2 + 1 = 0 \implies r^2 = -\frac{1}{3} \implies r = \pm \frac{i}{\sqrt{3}}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 \cos\left(\frac{x}{\sqrt{3}}\right) + C_2 \sin\left(\frac{x}{\sqrt{3}}\right)}
+\]
+
+\subsection*{Item g: \(\frac{d^2 y}{dx^2} - \frac{dy}{dx} - 6y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 - r - 6 = 0 \implies r = \frac{1 \pm \sqrt{25}}{2} = 3, -2
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{3x} + C_2 e^{-2x}}
+\]
+
+\subsection*{Item h: \(\frac{d^2 y}{dx^2} - 3 \frac{dy}{dx} + 2y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 - 3r + 2 = 0 \implies (r-1)(r-2) = 0 \implies r = 1, 2
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{x} + C_2 e^{2x}}
+\]
+
+\subsection*{Item i: \(\frac{d^2 y}{dx^2} + 8 \frac{dy}{dx} + 16y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 + 8r + 16 = 0 \implies (r+4)^2 = 0 \implies r = -4 \, (\text{dupla})
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = (C_1 + C_2 x)e^{-4x}}
+\]
+
+\subsection*{Item j: \(\frac{d^2 y}{dx^2} - 10 \frac{dy}{dx} + 25y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 - 10r + 25 = 0 \implies (r-5)^2 = 0 \implies r = 5 \, (\text{dupla})
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = (C_1 + C_2 x)e^{5x}}
+\]
+
+\subsection*{Item k: \(\frac{d^2 y}{dx^2} + 3 \frac{dy}{dx} - 5y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 + 3r - 5 = 0 \implies r = \frac{-3 \pm \sqrt{29}}{2}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{\frac{-3 + \sqrt{29}}{2}x} + C_2 e^{\frac{-3 - \sqrt{29}}{2}x}}
+\]
+
+\subsection*{Item l: \(\frac{d^2 y}{dx^2} + 4 \frac{dy}{dx} - y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 + 4r - 1 = 0 \implies r = \frac{-4 \pm \sqrt{20}}{2} = -2 \pm \sqrt{5}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{(-2 + \sqrt{5})x} + C_2 e^{(-2 - \sqrt{5})x}}
+\]
+
+\subsection*{Item m: \(12 \frac{d^2 y}{dx^2} - 5 \frac{dy}{dx} - 2y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+12r^2 - 5r - 2 = 0 \implies r = \frac{5 \pm \sqrt{121}}{24} = \frac{5 \pm 11}{24} \implies r = \frac{2}{3}, -\frac{1}{4}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{\frac{2}{3}x} + C_2 e^{-\frac{1}{4}x}}
+\]
+
+\subsection*{Item n: \(8 \frac{d^2 y}{dx^2} + 2 \frac{dy}{dx} - y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+8r^2 + 2r - 1 = 0 \implies r = \frac{-2 \pm \sqrt{36}}{16} = \frac{-2 \pm 6}{16} \implies r = \frac{1}{4}, -\frac{1}{2}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{\frac{1}{4}x} + C_2 e^{-\frac{1}{2}x}}
+\]
+
+\subsection*{Item o: \(\frac{d^2 y}{dx^2} - 4 \frac{dy}{dx} + 5y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+r^2 - 4r + 5 = 0 \implies r = \frac{4 \pm \sqrt{-4}}{2} = 2 \pm i
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = e^{2x}\left(C_1 \cos x + C_2 \sin x\right)}
+\]
+
+\subsection*{Item p: \(2 \frac{d^2 y}{dx^2} - 3 \frac{dy}{dx} - 4y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+2r^2 - 3r - 4 = 0 \implies r = \frac{3 \pm \sqrt{41}}{4}
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = C_1 e^{\frac{3 + \sqrt{41}}{4}x} + C_2 e^{\frac{3 - \sqrt{41}}{4}x}}
+\]
+
+\subsection*{Item q: \(3 \frac{d^2 y}{dx^2} + 2 \frac{dy}{dx} + y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+3r^2 + 2r + 1 = 0 \implies r = \frac{-2 \pm \sqrt{-8}}{6} = -\frac{1}{3} \pm \frac{\sqrt{2}}{3}i
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = e^{-\frac{x}{3}}\left(C_1 \cos\left(\frac{\sqrt{2}}{3}x\right) + C_2 \sin\left(\frac{\sqrt{2}}{3}x\right)\right)}
+\]
+
+\subsection*{Item r: \(2 \frac{d^2 y}{dx^2} + 2 \frac{dy}{dx} + y = 0\)}
+
+\textbf{Resolução:}
+
+Equação característica:
+\[
+2r^2 + 2r + 1 = 0 \implies r = \frac{-2 \pm \sqrt{-4}}{4} = -\frac{1}{2} \pm \frac{1}{2}i
+\]
+
+Solução geral:
+\[
+\boxed{y(x) = e^{-\frac{x}{2}}\left(C_1 \cos\left(\frac{x}{2}\right) + C_2 \sin\left(\frac{x}{2}\right)\right)}
+\]
+
+%% 2
+\newpage
+
+\section*{Problema 2: Soluções com Condições Iniciais}
+
+\subsection*{Item a: \(\frac{d^2 y}{dx^2} + 16y = 0\), \(y(0) = 2\), \(y'(0) = -2\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 + 16 = 0 \implies r = \pm 4i
+\]
+
+2. Solução geral:
+\[
+y(x) = C_1 \cos(4x) + C_2 \sin(4x)
+\]
+
+3. Aplicando condições iniciais:
+\[
+y(0) = C_1 = 2 \quad \text{e} \quad y'(0) = 4C_2 = -2 \implies C_2 = -\frac{1}{2}
+\]
+
+\[
+\boxed{y(x) = 2\cos(4x) - \frac{1}{2}\sin(4x)}
+\]
+
+\subsection*{Item b: \(\frac{d^2 y}{dx^2} - y = 0\), \(y(0) = 1\), \(y'(0) = 1\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 - 1 = 0 \implies r = \pm 1
+\]
+
+2. Solução geral:
+\[
+y(x) = C_1 e^{x} + C_2 e^{-x}
+\]
+
+3. Aplicando condições iniciais:
+\[
+\begin{cases}
+C_1 + C_2 = 1 \\
+C_1 - C_2 = 1
+\end{cases} \implies C_1 = 1, \, C_2 = 0
+\]
+
+\[
+\boxed{y(x) = e^{x}}
+\]
+
+\subsection*{Item c: \(\frac{d^2 y}{dx^2} + 6\frac{dy}{dx} + 5y = 0\), \(y(0) = 0\), \(y'(0) = 3\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 + 6r + 5 = 0 \implies r = -1, -5
+\]
+
+2. Solução geral:
+\[
+y(x) = C_1 e^{-x} + C_2 e^{-5x}
+\]
+
+3. Aplicando condições iniciais:
+\[
+\begin{cases}
+C_1 + C_2 = 0 \\
+-C_1 -5C_2 = 3
+\end{cases} \implies C_1 = \frac{3}{4}, \, C_2 = -\frac{3}{4}
+\]
+
+\[
+\boxed{y(x) = \frac{3}{4}e^{-x} - \frac{3}{4}e^{-5x}}
+\]
+
+\subsection*{Item d: \(\frac{d^2 y}{dx^2} - 8\frac{dy}{dx} + 17y = 0\), \(y(0) = 4\), \(y'(0) = -1\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 - 8r + 17 = 0 \implies r = 4 \pm i
+\]
+
+2. Solução geral:
+\[
+y(x) = e^{4x}\left(C_1 \cos x + C_2 \sin x\right)
+\]
+
+3. Aplicando condições iniciais:
+\[
+y(0) = C_1 = 4
+\]
+\[
+y'(0) = 4C_1 + C_2 = -1 \implies 16 + C_2 = -1 \implies C_2 = -17
+\]
+
+\[
+\boxed{y(x) = e^{4x}\left(4\cos x - 17\sin x\right)}
+\]
+
+\subsection*{Item e: \(2\frac{d^2 y}{dx^2} - 2\frac{dy}{dx} + y = 0\), \(y(0) = -1\), \(y'(0) = 0\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+2r^2 - 2r + 1 = 0 \implies r = \frac{1 \pm i}{2}
+\]
+
+2. Solução geral:
+\[
+y(x) = e^{\frac{x}{2}}\left(C_1 \cos\left(\frac{x}{2}\right) + C_2 \sin\left(\frac{x}{2}\right)\right)
+\]
+
+3. Aplicando condições iniciais:
+\[
+y(0) = C_1 = -1
+\]
+\[
+y'(0) = \frac{1}{2}C_1 + \frac{1}{2}C_2 = 0 \implies -\frac{1}{2} + \frac{C_2}{2} = 0 \implies C_2 = 1
+\]
+
+\[
+\boxed{y(x) = e^{\frac{x}{2}}\left(-\cos\left(\frac{x}{2}\right) + \sin\left(\frac{x}{2}\right)\right)}
+\]
+
+\subsection*{Item f: \(\frac{d^2 y}{dx^2} - 2\frac{dy}{dx} + y = 0\), \(y(0) = 5\), \(y'(0) = 10\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 - 2r + 1 = 0 \implies (r-1)^2 = 0 \implies r = 1 \, (\text{dupla})
+\]
+
+2. Solução geral:
+\[
+y(x) = (C_1 + C_2 x)e^{x}
+\]
+
+3. Aplicando condições iniciais:
+\[
+y(0) = C_1 = 5
+\]
+\[
+y'(0) = C_1 + C_2 = 10 \implies 5 + C_2 = 10 \implies C_2 = 5
+\]
+
+\[
+\boxed{y(x) = (5 + 5x)e^{x}}
+\]
+
+\subsection*{Item g: \(\frac{d^2 y}{dx^2} + \frac{dy}{dx} + 2y = 0\), \(y(0) = 0\), \(y'(0) = 0\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 + r + 2 = 0 \implies r = \frac{-1 \pm \sqrt{-7}}{2} = -\frac{1}{2} \pm \frac{\sqrt{7}}{2}i
+\]
+
+2. Solução geral:
+\[
+y(x) = e^{-\frac{x}{2}}\left(C_1 \cos\left(\frac{\sqrt{7}}{2}x\right) + C_2 \sin\left(\frac{\sqrt{7}}{2}x\right)\right)
+\]
+
+3. Aplicando condições iniciais:
+\[
+y(0) = C_1 = 0
+\]
+\[
+y'(0) = -\frac{1}{2}C_1 + \frac{\sqrt{7}}{2}C_2 = 0 \implies C_2 = 0
+\]
+
+\[
+\boxed{y(x) = 0} \quad (\text{Solução trivial})
+\]
+
+\subsection*{Item h: \(4\frac{d^2 y}{dx^2} - 4\frac{dy}{dx} - 3y = 0\), \(y(0) = 1\), \(y'(0) = 5\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+4r^2 - 4r - 3 = 0 \implies r = \frac{4 \pm \sqrt{64}}{8} = \frac{3}{2}, -\frac{1}{2}
+\]
+
+2. Solução geral:
+\[
+y(x) = C_1 e^{\frac{3}{2}x} + C_2 e^{-\frac{1}{2}x}
+\]
+
+3. Aplicando condições iniciais:
+\[
+\begin{cases}
+C_1 + C_2 = 1 \\
+\frac{3}{2}C_1 - \frac{1}{2}C_2 = 5
+\end{cases} \implies C_1 = 2, \, C_2 = -1
+\]
+
+\[
+\boxed{y(x) = 2e^{\frac{3}{2}x} - e^{-\frac{1}{2}x}}
+\]
+
+\subsection*{Item i: \(\frac{d^2 y}{dx^2} - 3\frac{dy}{dx} + 2y = 0\), \(y(1) = 0\), \(y'(1) = 1\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 - 3r + 2 = 0 \implies r = 1, 2
+\]
+
+2. Solução geral:
+\[
+y(x) = C_1 e^{x} + C_2 e^{2x}
+\]
+
+3. Aplicando condições em \(x=1\):
+\[
+\begin{cases}
+C_1 e^{1} + C_2 e^{2} = 0 \\
+C_1 e^{1} + 2C_2 e^{2} = 1
+\end{cases} \implies C_1 = -\frac{2}{e}, \, C_2 = \frac{1}{e^2}
+\]
+
+\[
+\boxed{y(x) = -\frac{2}{e}e^{x} + \frac{1}{e^2}e^{2x} = -2e^{x-1} + e^{2x-2}}
+\]
+
+\subsection*{Item j: \(\frac{d^2 y}{dx^2} + y = 0\), \(y\left(\frac{\pi}{3}\right) = 0\), \(y'\left(\frac{\pi}{3}\right) = 2\)}
+
+\textbf{Resolução:}
+
+1. Equação característica:
+\[
+r^2 + 1 = 0 \implies r = \pm i
+\]
+
+2. Solução geral:
+\[
+y(x) = C_1 \cos x + C_2 \sin x
+\]
+
+3. Aplicando condições em \(x = \frac{\pi}{3}\):
+\[
+\begin{cases}
+C_1 \cos\left(\frac{\pi}{3}\right) + C_2 \sin\left(\frac{\pi}{3}\right) = 0 \\
+-C_1 \sin\left(\frac{\pi}{3}\right) + C_2 \cos\left(\frac{\pi}{3}\right) = 2
+\end{cases}
+\]
+
+Substituindo \(\cos\left(\frac{\pi}{3}\right) = \frac{1}{2}\) e \(\sin\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}\):
+\[
+\begin{cases}
+\frac{C_1}{2} + \frac{\sqrt{3}C_2}{2} = 0 \\
+-\frac{\sqrt{3}C_1}{2} + \frac{C_2}{2} = 2
+\end{cases} \implies C_1 = -\sqrt{3}, \, C_2 = 1
+\]
+
+\[
+\boxed{y(x) = -\sqrt{3}\cos x + \sin x}
+\]
+
+%% 3
+\newpage
+
+\section*{Problema 3: Condições Iniciais}
+Encontre a solução particular da equação diferencial 
+\[
+\frac{d^2y}{dx^2} - \frac{dy}{dx} = 0,
+\] 
+sabendo que a solução geral é \(y(x) = c_1 e^x + c_2 e^{-x}\), e que satisfaz as condições iniciais:
+\[
+y(0) = 0 \quad \text{e} \quad \frac{dy}{dx}(0) = 1.
+\]
+
+\section*{Resolução}
+
+\subsection*{Passo 1: Aplicar a condição inicial \(y(0) = 0\)}
+Substituindo \(x = 0\) na solução geral:
+\[
+y(0) = c_1 e^{0} + c_2 e^{0} = c_1 + c_2 = 0 \quad \implies \quad c_1 = -c_2.
+\]
+
+\subsection*{Passo 2: Calcular a derivada da solução geral}
+Derivando \(y(x)\):
+\[
+\frac{dy}{dx} = c_1 e^{x} - c_2 e^{-x}.
+\]
+
+\subsection*{Passo 3: Aplicar a condição inicial \(\frac{dy}{dx}(0) = 1\)}
+Substituindo \(x = 0\) na derivada:
+\[
+\frac{dy}{dx}(0) = c_1 e^{0} - c_2 e^{0} = c_1 - c_2 = 1.
+\]
+
+\subsection*{Passo 4: Resolver o sistema de equações}
+Temos o sistema:
+\[
+\begin{cases}
+c_1 + c_2 = 0 \\
+c_1 - c_2 = 1
+\end{cases}
+\]
+
+Somando as duas equações:
+\[
+2c_1 = 1 \quad \implies \quad c_1 = \frac{1}{2}.
+\]
+
+Substituindo \(c_1 = \frac{1}{2}\) na primeira equação:
+\[
+\frac{1}{2} + c_2 = 0 \quad \implies \quad c_2 = -\frac{1}{2}.
+\]
+
+\subsection*{Passo 5: Escrever a solução particular}
+Substituindo \(c_1\) e \(c_2\) na solução geral:
+\[
+y(x) = \frac{1}{2}e^{x} - \frac{1}{2}e^{-x}.
+\]
+
+\section*{Resposta Final}
+\[
+\boxed{y(x) = \frac{1}{2}e^{x} - \frac{1}{2}e^{-x}}
+\]
+
+
+%% 4
+
+
+\section*{Problema 4: }
+Encontre a solução particular da equação diferencial
+\[
+x^2 \frac{d^2 y}{dx^2} - x \frac{dy}{dx} + y = 0,
+\]
+sabendo que a solução geral é \( y(x) = c_1 x + c_2 x \ln(x) \), e que satisfaz as condições:
+\[
+y(1) = 3 \quad \text{e} \quad \frac{dy}{dx} (1)= -1.
+\]
+
+\section*{Resolução}
+
+\subsection*{Passo 1: Aplicar a condição \( y(1) = 3 \)}
+Substituindo \( x = 1 \) na solução geral:
+\[
+y(1) = c_1 \cdot 1 + c_2 \cdot 1 \cdot \ln(1).
+\]
+Como \( \ln(1) = 0 \), temos:
+\[
+c_1 = 3.
+\]
+
+\subsection*{Passo 2: Calcular a derivada \( \frac{dy}{dx} \)}
+Derivando a solução geral:
+\[
+\frac{dy}{dx} = c_1 + c_2 \left( \ln(x) + 1 \right).
+\]
+
+\subsection*{Passo 3: Aplicar a condição \( \left.\frac{dy}{dx}\right|_{x=1} = -1 \)}
+Substituindo \( x = 1 \) na derivada:
+\[
+\left.\frac{dy}{dx}\right|_{x=1} = c_1 + c_2 \left( \ln(1) + 1 \right).
+\]
+Como \( \ln(1) = 0 \), obtemos:
+\[
+3 + c_2 = -1 \quad \implies \quad c_2 = -4.
+\]
+
+\subsection*{Passo 4: Escrever a solução particular}
+Substituindo \( c_1 = 3 \) e \( c_2 = -4 \) na solução geral:
+\[
+y(x) = 3x - 4x \ln(x).
+\]
+
+\subsection*{Verificação da Equação Diferencial}
+Para confirmar, calculamos:
+\[
+\frac{dy}{dx} = 3 - 4(\ln(x) + 1) = -1 - 4\ln(x),
+\]
+\[
+\frac{d^2y}{dx^2} = -\frac{4}{x}.
+\]
+Substituindo na equação diferencial:
+\[
+x^2 \left( -\frac{4}{x} \right) - x(-1 - 4\ln(x)) + (3x - 4x \ln(x)),
+\]
+\[
+-4x + x + 4x \ln(x) + 3x - 4x \ln(x) = 0.
+\]
+A equação é satisfeita.
+
+\section*{Resposta Final}
+\[
+\boxed{y(x) = 3x - 4x \ln(x)}
+\]
+
+
+
+\section*{Questão 5: Independência Linear via Wronskiano}
+
+\subsection*{Item a: \(\{e^{3x}, e^{-3x}\}\)}
+
+\textbf{Wronskiano:}
+\[
+W = \begin{vmatrix}
+e^{3x} & e^{-3x} \\
+3e^{3x} & -3e^{-3x}
+\end{vmatrix} = e^{3x}(-3e^{-3x}) - e^{-3x}(3e^{3x}) = -6 \neq 0
+\]
+\boxed{\text{Linearmente independentes.}}
+
+\subsection*{Item b: \(\{\cos(x), \sin(x)\}\)}
+
+\textbf{Wronskiano:}
+\[
+W = \begin{vmatrix}
+\cos(x) & \sin(x) \\
+-\sin(x) & \cos(x)
+\end{vmatrix} = \cos^2(x) + \sin^2(x) = 1 \neq 0
+\]
+\boxed{\text{Linearmente independentes.}}
+
+\subsection*{Item c: \(\{e^{2x}\cos(3x), e^{2x}\sin(3x)\}\)}
+
+\textbf{Wronskiano:}
+\[
+W = \begin{vmatrix}
+e^{2x}\cos(3x) & e^{2x}\sin(3x) \\
+2e^{2x}\cos(3x) - 3e^{2x}\sin(3x) & 2e^{2x}\sin(3x) + 3e^{2x}\cos(3x)
+\end{vmatrix}
+\]
+Simplificando:
+\[
+W = e^{4x}(3\cos^2(3x) + 3\sin^2(3x)) = 3e^{4x} \neq 0
+\]
+\boxed{\text{Linearmente independentes.}}
+
+\newpage
+\section*{Questão 6: Transformada de Laplace pela Definição}
+
+\subsection*{Item a: \(f(t) = \cos(3t)\)}
+\[
+\mathcal{L}\{\cos(3t)\} = \int_0^\infty e^{-st}\cos(3t)\, dt = \frac{s}{s^2 + 9}
+\]
+\boxed{\frac{s}{s^2 + 9}}
+
+\subsection*{Item b: \(g(t) = \sin(2t)\)}
+\[
+\mathcal{L}\{\sin(2t)\} = \int_0^\infty e^{-st}\sin(2t)\, dt = \frac{2}{s^2 + 4}
+\]
+\boxed{\frac{2}{s^2 + 4}}
+
+\subsection*{Item c: \(h(t) = t^3\)}
+\[
+\mathcal{L}\{t^3\} = \int_0^\infty e^{-st}t^3\, dt = \frac{6}{s^4}
+\]
+\boxed{\frac{6}{s^4}}
+
+\newpage
+\section*{Questão 7: Problemas de Valor Inicial via Laplace}
+
+\subsection*{Item a: \(\frac{dy}{dt} - 3y = e^{2t}, \, y(0) = 1\)}
+
+1. Aplicando Laplace:
+\[
+sY - 1 - 3Y = \frac{1}{s - 2} \implies Y(s - 3) = 1 + \frac{1}{s - 2}
+\]
+\[
+Y = \frac{1}{s - 3} + \frac{1}{(s - 2)(s - 3)}
+\]
+
+2. Decompondo em frações parciais:
+\[
+Y = \frac{1}{s - 3} + \frac{-1}{s - 2} + \frac{1}{s - 3}
+\]
+\[
+Y = \frac{2}{s - 3} - \frac{1}{s - 2}
+\]
+
+3. Transformada inversa:
+\[
+y(t) = 2e^{3t} - e^{2t}
+\]
+\boxed{y(t) = 2e^{3t} - e^{2t}}
+
+\subsection*{Item b: \(\frac{d^2y}{dx^2} - y = 2, \, y(0) = 0, \, y'(0) = 0\)}
+
+1. Aplicando Laplace:
+\[
+s^2Y - Y = \frac{2}{s} \implies Y(s^2 - 1) = \frac{2}{s}
+\]
+\[
+Y = \frac{2}{s(s^2 - 1)} = \frac{-2}{s} + \frac{2}{s^2 - 1}
+\]
+
+2. Transformada inversa:
+\[
+y(x) = -2 + 2\cosh(x)
+\]
+\boxed{y(x) = 2(\cosh(x) - 1)}
+
+
+
+\end{document}
